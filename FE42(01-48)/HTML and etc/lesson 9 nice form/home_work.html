@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home work</title>
+	<link rel="stylesheet" href="style-nine.css">	
+</head>
+<style>
+	.container{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 999;
+		background: rgb(0, 0, 0, 0.6);	
+		/*overflow: scroll; /*полосы прокрутки*/			
+	}
+	    .box{ /*описание серого квадрата*/
+		    position: absolute;
+		    width: 100%;
+		    height: 328px;
+		    top: 50%;
+		    left: 50%;
+		    z-index: 9999;
+		    background: #D3D3D3;
+		    margin-left: -131px;
+		    margin-top: -164px;
+		    max-width: 262px;	
+		    border-radius: 10px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /*параметры тени*/	
+		}
+	        .child-box{ /*описание ВАШ ВОПРОС*/
+	        	position: relative;
+	        	text-align: center;    
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;   
+            }
+	            .child-name-box{
+	            	position: inherit;	
+	            	padding-left: 30px;	            	
+	            	padding-right: 30px;
+	            	padding-bottom: 15px;	            		            	
+	          	}
+	          	.child-email-box{
+	            	position: inherit;	
+	            	padding-left: 30px;
+	            	padding-right: 30px;
+	            	padding-bottom: 15px;            		            	
+	          	}
+	          	.child-phrase-box{
+	            	position: inherit;	
+	            	padding-left: 30px;
+	            	padding-right: 30px;           		            	
+	          	}
+	          	    #comment input{
+                        width: 200px; /*ширина текстовых полей*/
+                        height: 25px; /*высота текстовых полей*/                            
+                    }
+                .child-order-box{  
+                    position: inherit;	
+                    padding-top: 20px;                        
+                    padding-left: 30px;
+                    padding-right: 30px;       	                   	
+                }
+	        	
+</style>
+
+<body>
+
+	<div class="container">
+		<div class="box"> <!--светло-серый прямоугольник-->
+
+        <div class="child-box"> <!--дитя с вопросом-->
+        	<h2>ВАШ ВОПРОС</h2></div> 
+
+  	        <form id="comment">
+	            <div class="child-name-box"><input type="text" id="name" name="name" class="input" placeholder="ИМЯ"></div> 
+
+                <div class="child-email-box"><input type="email" id="email" name="email" class="input" placeholder="E-MAIL"></div>
+
+                <div class="child-phrase-box"><input type="text" id="phrase" name="phrase" class="input" placeholder="КОММЕНТАРИЙ"></div>
+            </form>
+
+        <div class="child-order-box">
+        	<button>Заказать</button></div>             
+               
+        </div> 
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>less 28</title>
+</head>
+
+<body>
+<div id="userScreen" class="alert alert-warning"></div>
+</body>
+<script>
+	var userScreen;
+	userScreen="Ширина экрана пользователя: <strong>" + screen.width+"</strong>";
+	userScreen+="<br />";
+	userScreen+="Высота экрана пользователя: <strong>" + screen.height+"</strong>";
+	window.document.getElementById("userScreen").innerHTML = userScreen;
+</script>
+</html>

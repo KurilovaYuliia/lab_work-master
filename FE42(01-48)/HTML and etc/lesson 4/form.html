@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style_for_form.css">
+  </head>
+ 
+  <body>
+    <h1 class="heading">Регистрация</h1>
+    <form id="Form" class="something">
+
+      <fieldset>
+        <legend>AN AWESOME FORM :)</legend>
+
+        <label for="name">Будем знакомы</label>
+        <div>
+          <input type="text" id="name" name="name" class="input" placeholder="Ваше имя">
+        </div>        
+        <div>
+          <input type="text" id="last_name" name="last_name" class="input" placeholder="Ваша фамилия">
+        </div>
+
+        <!--label for="name">Телефон</label>
+        <div>
+          <input type="phone" id="phone" name="phone" class="input" placeholder="Ваш номер телефона">
+        </div>
+
+        <label for="name">Адрес почты</label>
+        <div>
+          <input type="email" id="email" name="email" class="input" placeholder="Ваш email">
+        </div>
+
+        <label for="name">Ваше сообщение:</label>
+        <div>
+          <textarea id="textarea" name="textarea" class="textarea" placeholder="Поле для ввода"></textarea>
+        </div-->
+        
+        <label for="choice">Выберите нужный вариант</label>        
+        <select id="choice">
+          <option>Первый вариант</option>
+          <option>Второй</option>
+          <option>Третий</option>
+          <option>Четвертый</option>          
+        </select>
+
+        <label><input type="checkbox" value="chk1" name="chk">Click me</label>
+        <label><input type="checkbox" value="chk2" name="chk">Or me</label>
+        <label><input type="checkbox" value="chk3" name="chk">Or all of us</label>        
+        <input type="checkbox" id="chk4" value="chk4" name="chk">
+        <label for="chk4">This is also right</label>
+
+        <label for="file">Выберите файл</label>
+        <p><input type="file" id="file"></p>
+
+        <label><input type="radio" name="radio" value="radio1">Доставка</label>
+        <label><input type="radio" name="radio" value="radio2">Без доставки</label>
+
+        <p><input type="submit" name="submit" value="Отправить"></p>
+  
+      </fieldset>      
+    </form>
+  </body>
+    
+</html>

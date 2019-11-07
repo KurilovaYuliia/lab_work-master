@@ -1,0 +1,14 @@
+table {
+  border: 5px solid red; /* Граница вокруг ячеек */
+  border-collapse: collapse; /* Отображать только одинарные линии */
+}
+
+td {
+  border: 5px solid red;
+  /* border-top, border-right, border-bottom, border-left - 
+  задают отображение только одной рамки ячейки: верхней, правой, 
+  нижней или левой соответственно */
+  padding: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+}

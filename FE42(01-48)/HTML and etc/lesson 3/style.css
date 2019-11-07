@@ -1,0 +1,45 @@
+body {
+   background: #F5DEB3;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Arial", serif;
+  color: #000000;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Arial", serif;
+  color: #170D0D;
+}  
+
+h3 {
+  font-size: 20px;
+  font-family: "Arial", serif;
+  color: #170D0D;
+} 
+
+p {
+  font-size: 14px;
+  font-family: "Arial", serif;
+  color: #000000;
+  margin-top: 0.1em; /* Отступ сверху */
+  margin-bottom: 0.3em; /* Отступ снизу */
+}
+
+li {
+  font-size: 14px;
+  font-family: "Arial", serif;
+  color: #2F4F4F;
+}
+
+img {
+  float: left;
+  width: 370px;
+  margin: 0 0 100px;
+  border-radius: 60px 60px;
+}
+
+
+

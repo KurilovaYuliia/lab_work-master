@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>less 22</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var user = {
+		name: 'Gregor.',
+		age: '30.',
+		work_address: 'NY Wall Street 11.',
+		postal_code: '10005',
+		information: function(){
+			alert(" Name: " + this.name + 
+				" Age: " + this.age + " Work address: " + this.work_address + " postal code: " + this.postal_code);
+		}
+	}
+	user.information();
+
+
+	var age = +prompt("Сколько Вам лет?");
+	if (age>=18){
+		function foo(){
+			alert('Добро пожаловать!');
+		}
+	}else{
+		function foo(){
+			alert('До 18 лет нельзя')
+		}
+	}
+	foo();
+
+
+	function greeting (firstName, lastName){
+		alert("Добро пожаловать, " + getFullName());
+		alert("Заходите ещё, " + getFullName());
+		function getFullName(){
+		return firstName + " " + lastName;
+		}
+	}
+	greeting ('Имя','Фамилия')
+
+/*1) Создать об'экт в нем свойста (Гриша, 30 лет, адрес работы, почтовый индекс ), внутри об'экта создать функцию вывести свойства через оператор this или alert или console.log
+
+2) Создать функцию с prompt если человеку нету 18 лет значит alert нельзя, если челоыеку есть 18 окно alert Вам можно 
+
+3) Создать функцию создать в ней два параметра , создать внутри функцию еще и туда передать пустой параметр и от туда передать параметр вызов функции*/
+
+</script>
+</html>

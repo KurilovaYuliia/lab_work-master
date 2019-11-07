@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX</title>
+</head>
+
+<body>
+<form id="send-form" method="post">
+    <fieldset>
+    		<legend>AJAX форма отправки сообщения</legend>
+            
+            <label for="name">Имя<span>*</span></label>
+            <input type="text" name="name" id="name" value="" maxlength="255" required="required" />
+            
+            <label for="email">E-mail<span>*</span></label>
+            <input type="email" name="email" id="email" value="" maxlength="255" required="required" />
+            
+            <label for="tel">Телефон<span>*</span></label>
+            <input type="tel" name="tel" id="tel" value="" maxlength="255"  />
+            
+            <label>Сообщение<span>*</span></label>
+            <textarea  name="text" id="msg" value="" maxlength="255" rows="10" cols="50" onKeyUp="" onChange="" required="required" />
+            <input id="sendmail" type="submit" class="btn btn-success" value="Отправить" />
+    </fieldset>
+</form>
+</body>
+<script>
+</script>
+</html>

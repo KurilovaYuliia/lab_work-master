@@ -1,0 +1,139 @@
+.tel {
+  width: 100px;
+  height: 100%;
+}
+.email {
+  width: 100px;
+  height: 100%;
+}
+.click {
+  border-color: #00FFFF;
+  border-bottom-width: 10px;
+  display: flex;
+}
+.view {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0 0 0 215px;
+}
+.tabsnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.tabsnav__item {
+  position: relative;
+  height: 50px;
+  cursor: pointer;
+}
+.tabsnav__bar {
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+  background: currentColor;
+  width: 100%;
+}
+.tabsnav__title {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: none;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tabsnav--vertical {
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+.tabsnav--vertical .tabsnav__item {
+  flex: none;
+  width: 50px;
+  height: 100%;
+}
+.tabsnav--vertical .tabsnav__title {
+  transform: rotate(-90deg);
+}
+.tabsnav--ander {
+  left: 45px;
+}
+.tabsnav--ander .tabsnav__bar {
+  background: #fff;
+}
+.tabsnav--ander .tabsnav__title {
+  color: #1d48f3;
+}
+.tabsnav--ander .tabsnav__item:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+/* Ibai */
+.tabsnav--ibai {
+  top: 50%;
+  margin-top: -115px;
+}
+.tabsnav--ibai .tabsnav__item {
+  height: 70px;
+}
+.tabsnav--ibai .tabsnav__bar {
+  background: #414a52;
+}
+.tabsnav--ibai .tabsnav__title {
+  color: #fc0;
+}
+.tabsnav--ibai .tabsnav__item:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+body {
+  font-family: 'Avenir Next', Avenir, Helvetica, Arial, sans-serif;
+  color: #393a3e;
+  background: lavender;
+}
+header {
+  background: #FFC0CB;
+  position: relative;
+  display: flex;
+  height: 100px;
+  margin: 0 auto;
+}
+.aside {
+  background: #ccc;
+}
+.sidebar {
+  border-bottom: 1px solid #ccc;
+}
+.border {
+  border-top: dotted 1px #000;
+  border-bottom: 2px solid #000;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: dotted 1px #000;
+  border-bottom: 2px solid #000;
+}
+.sidebar {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.content {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+h1 {
+  padding: 5px;
+}
+h2.page-title {
+  padding: 10px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example</title>
+</head>
+
+<body>
+    <h2>Text</h2>
+    <div id="demo">
+    	<button type="button" onclick="loadXMLDoc()">Change Content</button>
+    </div>
+</body>
+<script>
+	function (r_method, r_path, r_args, r_handler){
+		var Request = CreateRequest(); //создаем запрос
+		if (!Request) {
+			return;
+		}
+	Request.onreadystatechange = function () {
+		if (Request.readyState == 4) {
+			r_handler(Request);
+		}else{
+			//
+		}else{
+			//
+		}
+	}
+	if (r_method.toLowerCase() == "get" && r_args.lenght > 0){
+		r_path += "?" + r_args;
+		Request.open(r_method, r_path, true);
+	}
+	if (r_method.toLowerCase() == "post") {
+       Request.setRequestHeader("Content-Type", "application/ x-www-form-urlencode; charset = utf-8");
+       Reques.send(r_args);
+	}else{
+		Reques.send(null);
+	}
+}
+</script>
+</html>

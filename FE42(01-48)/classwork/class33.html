@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+</head>
+
+<body>
+<header></header>
+<section></section>
+
+<p id="first"></p>
+<p id="second"></p>
+</body>
+
+<script>
+	
+	/*var exampleObj = {
+	  name: "Yuliia",
+	  age: 33,
+	  town: "Kiev",
+	  address: "Khreshatik St." 
+    };	
+
+   var json = JSON.stringify(exampleObj);
+   alert(json); //вывод через alert
+/////////////////////////////////////////////////////////
+
+   var exampleObj2 = {
+	  name: "Yuliia",
+	  age: 33,
+	  town: "Kiev",
+	  address: "Khreshatik St." 
+    };
+
+    var myJson = JSON.stringify(exampleObj2);
+    document.getElementById('first').innerHTML = myJson; //вывод через document
+/////////////////////////////////////////////////////////*/
+    
+    var exampleObj3 = '{"name": "Somename", "age": "33", "birth": "1985-10-22", "lastName": "Sometext", "birthHusband": "1983-06-01"}';	
+
+    var objDate = JSON.parse(exampleObj3);
+    objDate.birth = new Date(objDate.birth);
+    objDate.birthHusband = new Date(objDate.birthHusband);
+    document.getElementById('second').innerHTML = objDate.name + "," + objDate.age + ","+  objDate.birth + "," + objDate.lastName + "," + objDate.birthHusband;
+	
+</script>
+<a href="sometext.txt" target="_blank">sometext.txt</a>
+</html>
+

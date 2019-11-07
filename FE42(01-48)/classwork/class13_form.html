@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+</head>
+
+<body>
+
+<h1>Form</h1>
+
+		<form action="handler.php"  id="form1" name="form1" method="post" target="_blank" novalidate> 
+        <!--action - Адрес программы или документа, который обрабатывает данные формы.-->
+        
+		<!-- novalidate - Отменяет встроенную проверку данных введенных пользователем в форме на корректность. 
+        Такая проверка осуществляется браузером автоматически при отправке формы на сервер и происходит для полей 
+        <input type="email">, <input type="url">, а также при наличии атрибута pattern или required.-->
+        
+			<fieldset>
+				<legend>An awesome form</legend>
+				<label for="name">Name:</label>
+                <div>
+					 <input type="text" name="name" id="name" class="input" placeholder="ИМЯ" onblur="javascript: if(this.placeholder == '') { this.placeholder = 'ИМЯ';}" onfocus="javascript: if(this.placeholder == ' ИМЯ') this.placeholder = '';">
+				</div>	
+                
+                <div>
+                     <input type="tel" name="tel" id="tel" class="input" placeholder="ТЕЛЕФОН" onblur="javascript: if(this.placeholder == '') { this.placeholder = 'ТЕЛЕФОН';}" onfocus="javascript: if(this.placeholder == ' ТЕЛЕФОН') this.placeholder = '';" />
+                 </div>
+                 
+                 <div>
+                 	<input type="email" name="email" id="email" class="input" required placeholder="E-MAIL" onblur="javascript: if(this.placeholder == '') { this.placeholder = 'E-MAIL';}" onfocus="javascript: if(this.placeholder == ' E-MAIL') this.placeholder = '';" />
+                 </div>
+                 
+                 <div>
+                 		 <input type="textarea" name="textarea" id="textarea"  class="input" placeholder="КОММЕНТАРИЙ" onblur="javascript: if(this.placeholder == '') { this.placeholder = 'КОММЕНТАРИЙ';}" onfocus="javascript: if(this.placeholder == ' КОММЕНТАРИЙ') this.placeholder = '';" />
+                 </div>
+                 
+                 <div>
+                 		<button id="button">Заказать</button>
+                 </div>
+                                   
+                                  
+				<div>
+				<label for="pass">Password:</label>
+				<input name="password" type="password" id="pass">
+				</div>
+				
+				
+				<label><input type="checkbox" value="chk1" name="chk">Click me</label>
+				<label><input type="checkbox" value="chk2" name="chk">Or me</label>
+				<label><input type="checkbox" value="chk3" name="chk">Or all of us</label>				
+				<input type="checkbox" id="chk4" value="chk4" name="chk">
+				<label for="chk4">This is also right</label>
+
+				<input type="hidden">
+				
+				<br>
+
+				<label><input type="radio" name="radio" value="radio1">Select me</label>
+				<label><input type="radio" name="radio" value="radio2">Or me</label>
+				<label><input type="radio" name="radio" value="radio3">But only one</label>
+
+				<br>
+
+				<label for="file"></label>
+				<input type="file" id="file">
+
+				<br>
+				<label for="sel">Dropdown</label>
+				<select id="sel">
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+					<option>Option 4</option>
+				</select>
+
+				<hr>
+				<input type="reset">
+				<input type="submit">
+
+				<hr>
+				<h2>HTML5 input types</h2>
+				<label>Color: <input type="color"></label><br>
+				<label>Date: <input type="date"></label><br>
+				<label>Email: <input type="email" placeholder="example@mail.com"></label><br>
+				<label>Number: <input type="number" value="-100"></label><br>
+				<label>Time: <input type="time"></label><br>
+				<label>Range: <input type="range"></label><br>
+			</fieldset>
+		</form>	
+        <details>
+        	<summary>Click me</summary>
+            <p>hidden text</p>
+        </details>	
+</body>
+</html>

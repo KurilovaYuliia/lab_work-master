@@ -1,0 +1,26 @@
+h1{
+	font-family: "Caveat", fantasy;
+    font-size: 40px;  
+    color: #730275;  
+    text-align: center;
+}
+
+h2{
+	font-family: "Caveat", fantasy;
+    font-size: 30px;  
+    color: #BB09BE;  
+    text-align: center;    
+}
+
+.email{
+	width: 30%;
+	height: 10px; /* высота */	
+}
+
+
+                 /*Создать section 
+	               в нем картинка скролит внутри заголовок h1, 
+	               описание по центру как и заголовок
+                   и форма email поле инпут плейсхолдером, 
+                   и кнопка button отправить 
+                   все сделать с помощью css */

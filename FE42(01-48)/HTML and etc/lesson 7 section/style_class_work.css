@@ -1,0 +1,23 @@
+.color {
+	background-color: #F6FE5E;
+	width: 100%;
+	height: 600px;  
+}
+
+.img{
+	width: 100%;
+	height: 400px;
+	background: url(img/banana.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.img_second{
+	width: 100%;
+	height: 400px; /* высота */
+	background: url(img/fun.jpg) no-repeat,
+	            url(img/bird.jpg) no-repeat,
+	            url(img/hello.jpg) no-repeat;
+	/* аналогична строка background-repeat: no-repeat, no-repeat, no-repeat; */                              
+	background-position: left, center, right;
+}

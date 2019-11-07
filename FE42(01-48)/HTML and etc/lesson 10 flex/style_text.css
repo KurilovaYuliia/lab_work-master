@@ -1,0 +1,18 @@
+.main{
+	    width: 300px;
+	    padding-top: 20px;
+	    padding-left: 30px;
+	}
+    .phrase{
+	    border: 2px solid #191970;
+	    white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        padding: 5px;
+        text-overflow: ellipsis; /* Добавляем многоточие */
+	    width: 290px;
+	}
+	p{
+		color: #191970;
+		text-decoration-line: underline;
+		text-decoration-color: red;
+	}

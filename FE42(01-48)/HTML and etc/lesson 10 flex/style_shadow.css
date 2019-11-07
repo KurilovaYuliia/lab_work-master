@@ -1,0 +1,18 @@
+.box {
+   	    width: 200px;
+	    height: 200px;
+	    border-radius: 100%;
+	    background: #DE6D27;
+	    margin: 0 auto;
+	    margin-top: 40px;
+	}    
+        .sha1{
+        	box-shadow: inset 0px 2px 3px rgba(248,181,139,0.5), /*тень выводится внутри элемента*/
+	                          0px 2px 1px rgba(195,82,11,1);
+            padding: 10px;
+        }
+        .sha2{
+        	box-shadow: 1px 2px 3px rgba(248,181,139,0.5), 
+	                    3px 2px 1px rgba(195,82,11,1);
+            padding: 10px;
+        }  		

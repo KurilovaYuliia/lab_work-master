@@ -1,0 +1,46 @@
+a {
+	color: #000;
+    text-decoration: none; /*отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию*/
+}
+
+    #button1 {      
+        margin: 0 auto;  
+        background: #BA55D3;
+        border: 2px solid #ADFF2F;
+        height: 50px;
+        width: 200px;
+        display: block; /*элемент показывается как блочный*/
+        background-image: linear-gradient(top, 
+        	              rgba(0, 0, 0, 0), 
+        	              rgba(0, 0, 0, 0.2)); /*градиент*/
+        border-radius: 15px;
+        transition: all 0.5s ease; /*анимация*/
+    }	
+    #button1:hover {
+        width: 100%;
+    }	
+    #button2 {
+        margin: 0 auto;
+        background: #ADFF2F;
+        border: 2px solid #BA55D3;
+        height: 50px;
+        width: 200px;        
+        display: block;
+        text-align: center;
+        line-height: 47px;
+        background-image: linear-gradient(top, 
+        	              rgba(0, 0, 0, 0),  
+        	              rgba(0, 0, 0, 0.2)); /*градиент*/
+        box-shadow: 0px 5px 3px rgba(0, 10, 0, 0.5);
+        transition: all 0.5s ease; /*анимация*/
+  /*0px(смещение по ширине) 
+	3px(смещение по высоте) 
+	1px (радиус размытия) 
+	2px(растяжение) 
+	white(цвет тени)*/	
+        border-radius: 10px;
+    }
+    #button2:hover {
+        background-color: #ff3434;
+        cursor: pointer; /*устанавливает форму курсора, когда он находится в пределах элемента*/
+    }

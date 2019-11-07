@@ -1,0 +1,25 @@
+#закрыть индексацию на контакты (если это папка)#
+User-agent:* 
+
+Disallow: /no-index/contacts/
+
+
+#закрыть индексацию на контакты (если это файл)#
+User-agent:*
+
+Disallow: /no-index/contacts.html
+
+
+#открыть индексацию на гугл только страница https://my-site/company#
+User-agent: *
+
+Disallow: /no-bots/block-all-bots-except-rogerbot-company.html
+
+User-agent: Googlebot
+
+Allow: /no-bots/block-all-bots-except-Googlebot-company.html
+
+#или только?#
+User-agent: Googlebot
+
+Allow: /no-bots/block-all-bots-except-Googlebot-company.html

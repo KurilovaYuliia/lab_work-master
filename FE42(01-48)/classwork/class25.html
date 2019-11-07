@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window</title>
+</head>
+<body onload="start()">
+	<p id="text1">Time</p>
+    <input type="button" value="press" onClick="stop()" />
+    <input type="button" value="Открыть окно" onclick="openw()" /;>
+    <input type="button" value="Закрыть окно" onclick="closew()" /;>
+
+</body>
+<script>
+	var win;
+	function openw() {
+		win = window.open();
+	}
+	function closew() {
+		 if(win != null)
+         win,close();
+	}
+	function time(){
+    	var dat = new Date();
+    	var hour = dat.getHours();
+    	var min = dat.getMinutes();
+    	var sec = dat.getSeconds();
+    	var tim=hour+':'+min+':'+sec;
+    	document.getElementById('text1').innerHTML=tim;
+    }
+        function start(){
+        	id = setInterval('time()', 1000);
+        }
+        function stop(){
+        	clearInterval(id);
+        }
+
+</script>
+</html>
+
+     
+     
+    

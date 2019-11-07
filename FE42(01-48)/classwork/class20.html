@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>switch</title>
+</head>
+
+<script>
+	/*switch(x){
+		case'value1':
+		[break]
+		case'value2':
+		[break]
+
+		default:
+		[break]
+	}
+	var a = 4 + 4;
+	switch(a){
+		case 3:
+		alert('Мало');
+		break;
+
+		case 8:
+		alert('Верно');
+		break;
+
+		case 10:
+		alert('Много');
+		break;
+
+		default:
+		alert('Таких значений нет');		
+	}*/
+
+    /* 
+    эти два цикла идентичны
+    var i;
+	for(i=0; i<5; i++){
+		alert(i);
+		}
+
+	var i = 0;
+        while (i < 5) {
+            alert( i );
+            i++;
+        }
+        ______________________
+
+    var arr = ['Киев', 'Харьков', 'Полтава', 'Одесса'];
+    alert(arr.length);
+    
+    arr.pop('Одесса');
+    arr.unshift('Днепр');
+
+    alert(arr);
+
+    var arr = new Array('Слово', 'Второе', 'Третье');//индексы начинаем с 0, т.е. Слово=0, Второе=1, Третье=2 
+    var arr2 = new Array(2, 3);  
+
+    alert(arr[1]);//выведет слово Второе, т.к. нумерация идет по индексам
+    alert(arr2[0]); */
+//___________________________________________
+    /*var names = 'Юля, Марина, Егор, Денис, Леонид, Наташа';
+
+    var arr = names.split(', ');
+
+    for (var i = 0; i < arr.length; i++) {
+        alert( 'Вам сообщение, ' + arr[i] );
+    }
+//___________________________________________
+    var str = "Тест";
+
+    alert( str.split('') ); // Т,е,с,т  
+
+//___________________________________________ 
+    var arr2 = ['Юля', 'Марина', 'Егор', 'Денис', 'Леонид', 'Наташа'];
+
+    var str = arr2.join('; ');
+
+    alert( str );
+    alert ( new Array(4).join('Hello! ')); */
+//___________________________________________ 
+    var arr3 = ['Урок', 'уже', 'начался'];
+    arr3.splice(2, 1); // начиная с позиции 2, удалить 1 элемент
+    alert(arr3); 
+
+    var arr4 = ['Урок', 'уже', 'начался'];
+    arr4.splice(2, 1, 'закончился'); //удалить 2 элемент и добавить другое вместо него
+    alert(arr4); 
+
+//___________________________________________
+    var arr5 = [1, 2, 3, 4, 5];
+    arr5.reverse(); 
+
+    alert(arr5);    
+//___________________________________________
+    /*var arr5 = [1, 2];
+    var newArr = arr5.concat(3, 4); 
+
+    alert(newArr);
+//___________________________________________
+    var arr6 = [1, 0, false];
+    
+    alert( arr6.indexOf(0) ); // 1
+    alert( arr6.indexOf(null) ); // -1
+    alert( arr6.indexOf(false) ); // 2 */
+
+    let player = {
+
+    name: "super",
+
+    score: 99,
+
+    getCombinedName: function() {
+    	return this.name + this.score;
+        }
+
+    };
+
+    
+</script>
+
+    <body>	
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Float</title>
+</head>
+
+<style>
+	.parent{
+    position: relative;
+}
+img {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            transition: 1.5s;
+        }
+        
+        img:hover {
+            z-index: 5;
+            transform: scale(1.1);
+            transition: 15s;
+            top: 10%;
+            cursor: pointer;
+        }
+
+   .picture1{
+   	width: 200px;
+   	height: 200px;
+   	position: absolute;
+   	top: 60px;
+   	left: 60px;     
+   	z-index: 1;  
+   	transform: scale(1.1);
+    transition: 10s;    
+   }
+   .picture2{
+   	width: 200px;
+   	height: 200px;   
+   	position: absolute;
+   	top: 100px;
+   	left: 100px;  
+   	z-index: 2;      
+   }
+   .picture3{
+   	width: 200px;
+   	height: 200px;
+   	position: absolute;
+   	top: 140px;
+   	left: 140px; 
+   	z-index: 3;       
+   } 
+      
+</style>
+
+<body>
+	<div class="parent">
+
+	<img class="picture1" src="throne.png" alt="throne"/>
+	<img class="picture2" src="throne.png" alt="throne"/>
+	<img class="picture3" src="throne.png" alt="throne"/>
+	
+</div>
+
+</body>
+</html>

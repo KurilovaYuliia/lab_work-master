@@ -1,0 +1,32 @@
+main {  
+  border: 10px solid #B0E0E6; 
+}
+
+
+h1 {
+  font-family: "Caveat", fantasy;
+  font-size: 40px;;  
+  color: #87CEEB;    
+ }
+
+img {
+  float: left;  
+}
+
+ul {  
+  list-style-image: url(new_images/star.png); /* Путь к изображению маркера */
+  margin: 0;
+  font-family: "Caveat", fantasy;
+  font-size: 25px;  
+  color: #87CEEB;   
+}
+
+.b {
+  margin: 15px 10px; /* Отступ от краев*/ 
+  font-family: "Caveat", fantasy;
+  font-size: 25px;  
+  color: white;  
+  background: #C71585;
+  border-radius: 5px;  
+}
+

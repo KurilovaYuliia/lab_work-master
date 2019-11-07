@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js</title>
+</head>
+<script>
+	let player = {
+    name: "super",
+    score: 99,
+
+    getCombinedName: function() {
+    	return name + score;
+        }
+    };
+</script>
+
+<script>
+	var name = prompt('Давайте знакомиться. Как Вас зовут?');
+	var task1 = ('Первое задание');
+	alert('Очень приятно, '+name +'!');
+	alert(task1);
+
+	var age = prompt("Пожалуйста, укажите Ваш возраст");
+		
+	if (age>=18) {
+		alert('Серьезно?! Но помни, ' +name +', обманывать нехорошо!');
+	        }else if (age<18) {
+	  	        alert('Ну вот, ' +age +' - это еще не совершеннолетие :)');
+	            }else if (false) {
+	            	}else{
+	                	alert(name +', Вы ошиблись при вводе. Попробуйте еще раз');
+	                }
+</script>
+
+<script>
+	var task2 = ('Второе задание');
+	alert(task2); 
+
+	var example = prompt('Введите любое число');
+
+	if (example>0) {
+		alert(+example +' больше нуля, поэтому выведем 1');
+	        }else if (example<0) {
+		        alert(+example +' меньше нуля, поэтому выведем -1');
+	                }else if (example==0) {
+		                alert(+example +' равно нулю, поэтому выведем 0');
+	                        }else if (false) {
+	            	            }else{
+	                	            alert(name +', Вы ошиблись при вводе. Попробуйте еще раз');
+	                            }
+</script>
+
+<body>	
+	<p>1) prompt вопрос (есть 18 лет), если пишет да, то текст "ты молодец"" или еще что-то, если пишет меньше 18 лет - пишите через alert или как угодно выводите "не проходите"" или еще что-то)</p>
+    <hr>
+    <p>2) используя конструкцию if...else, напишите код, который получает значение prompt, а затем выводит alert: 1 если значение больше нуля, -1 если значение меньше нуля, 0 если значение равно нулю</p>
+	<hr>
+</body>
+
+</html>

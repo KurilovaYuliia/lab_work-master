@@ -1,0 +1,24 @@
+﻿нахожусь в ветке 
+
+файлик залила 
+какие команды по очереди запустить?
+
+git branch                   - проверить в какой ветке находишься сейчас 
+git checkout -b first_branch - создать ветку и сразу в неё перейти
+
+git checkout first_branch    - перейти в другую ветку (first_branch - название ветки)
+git add .                    - добавить новый созданный файл 
+git commit -m "branch"       - в кавычках можно прописать комментарий 
+git merge first_branch       - когда командная работа 
+git push 
+или
+git push --set-upstream origin first_branch - возможно в терминале и эту команду запросит выполнить после команды git push
+
+*** *** *** *** ***
+команды, когда мы находимся в ветке и нам нужно эту ветку удалить
+
+git branch
+git checkout master
+git branch -d first_branch   - выдавало предупреждение о вводе в команде заглавной "D" 
+или
+git branch -D first_branch   - т.е. заглавная "D" и название удаляемой ветки

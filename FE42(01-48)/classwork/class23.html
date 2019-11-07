@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+
+<script>
+	function ask(question, yes, no){
+		if(confirm(question)) yes()
+			else no();
+		}
+		function ShowOk(){
+			alert('Вы согласились');
+		}
+		function ShowCansel(){
+			alert('Вы отменили выполнения');
+		}
+		ask('Вы согласны?', ShowOk, ShowCansel);
+
+
+		function ask(question, yes, no){
+		if(confirm(question)) yes()
+			else no();
+		}
+		ask('Вы согласны?'),
+		function() {alert('Вы согласились');} 
+		function() {alert('Вы отменили выполнения');}
+				</script>
+
+</html>

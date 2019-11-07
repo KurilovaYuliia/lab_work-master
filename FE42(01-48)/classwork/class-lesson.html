@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform</title>
+</head>
+<style>
+	.box{
+		width: 200px;
+		height: 50px;
+		background: #90D070;
+		transition: 2s;
+		border: 2px solid #BA55D3;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.translate{
+		transform: translate(50px, 100px);
+		-ms-transform: translate(50px, 100px);
+		-webkit-transform: translate(50px, 100px);
+		-o-transform: translate(50px, 100px);
+		-moz-transform: translate(50px, 100px);
+	}
+	.translate-X:hover{
+		transform: translateX(20px);
+		opacity: 0.8; /* прозрачность */
+	}
+	.scale:hover{
+		transform: scale(2.5);
+	}
+	.scale-X:hover{
+		transform: scale(-2.5);
+	}	
+	.rotate{
+		transform: rotate(30deg);
+	}
+	.skew{
+		transform: skew(30deg, 20deg);
+	}
+	.skew-X{
+		transform: skewY(-30deg);
+	}
+	.matrix{
+		transform: matrix(0.8, 0, 0.8, 0);
+	}
+</style>
+<body>
+	<div class="translate box">translate</div>
+	<div class="translate-X box">translate-X</div>
+	<div class="scale box">scale</div>
+	<div class="scale-X box">scale-X</div>
+	<div class="rotate box">rotate</div>
+	<div class="skew box">skew</div>
+	<div class="skew-X box">skew-X</div>
+	<div class="matrix box">matrix</div>
+
+</body>
+</html>

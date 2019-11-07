@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.pretty {
+		width: 101px;
+		height: 300px;
+		margin: 0 auto;
+		margin-top: 50px;
+		background-image: url("walk4.png");
+		animation: mymove 1s steps(7) infinite;		
+		background-repeat: no-repeat;
+		/* animation-delay: 0.3s; Определяет задержку начала анимации*/
+		/* animation-direction: alternate; Определяет, должна ли анимация воспроизводиться вперед, назад или поочередно*/
+		/* animation-duration: 2s; Определяет, сколько времени анимация должна занять для завершения одного цикла*/
+		/* animation-iteration-count: 5; Определяет, сколько раз анимация должна проигрываться*/
+		/* animation-play-state: running/paused; Указывает, запущена ли анимация или приостановлена*/
+		/* animation-timing-function: linear; Определяет кривую скорости анимации*/
+	}
+	@keyframes mymove {	/*поиграть с положением, пример лестница*/
+	    0% {background-position: 0px 0px;}	
+		100% {background-position: -855px 0px;} /*параметры по оси X и Y*/
+	}
+		
+</style>
+<body>
+	<div class="pretty"></div>			
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>menu</title>
+</head>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+	.header .inline{
+			display:inline-block;
+			width: 33%;
+			vertical-align: text-top;
+			padding-top: 67px;
+			text-align:center;
+		}
+		.logo img{
+				width: auto;
+				max-width: 100%;
+				height: auto;
+			}
+		.header .logo{
+				max-width: 145px;
+				width: 100%;
+				padding-top:0;
+			}
+		.nav{
+			height:38px;
+			background:#142F65;
+			}
+		.nav ul.menu li.item ul.child-menu{
+			display:none;
+			position:absolute;
+			    width: 200px;
+			}
+		.nav ul.menu li.item{
+			position:relative;
+			background:#141051;
+			}
+		.nav ul.menu li.item ul.child-menu li{
+			display:block;
+			
+			}
+		.nav ul.menu li.item ul.child-menu li:hover{
+			background:#2DE2DC;
+				color:#B8BC26;
+			}
+		.nav ul.menu li.item:hover ul.child-menu{
+			display:block;
+			}
+		.nav ul.menu li{
+			display:inline;
+			    padding: 10px 30px;
+				    line-height: 38px;
+			}
+		.container{
+			width:1170px;
+			margin:0 auto;
+			}
+		.nav ul li a{
+			color:#fff;
+			font-size:15px;
+			text-decoration:none;
+			}
+		.nav ul.menu li.item:hover,
+		.nav ul.menu li.item.active{
+				background:#2DE2DC;
+				color:#B8BC26;
+			}
+			#item-323 ul.child-menu{
+				    left: -3%;
+				}
+				#item-324 ul.child-menu{
+				    left: 1%;
+				}
+</style>
+<body>
+    <div class="main_site">
+        <header class="header">
+       		<a  class="logo inline" href="/"><img src="cup2.jpg"  alt="Logo"/></a>
+            <div class="slogon inline">Lorem ipsum dolor</div>
+            <div class="contact-info inline">(098) 657 56 56</div>
+    
+            <nav class="nav">
+                <div class="container">
+               		<ul class="menu">
+               		    <li class="item active"><a href="#" class="item-nav">Home</a></li>
+                        <li class="item" id="item-323"><a href="#" class="item-nav">About Us</a>   		
+                        	<ul class="child-menu">
+                                <li class="item"><a href="#" class="item-nav">About 1</a></li>
+                                <li class="item"><a href="#" class="item-nav">About 2</a></li>
+                                <li class="item"><a href="#" class="item-nav">About 3</a></li>
+                                <li class="item"><a href="#" class="item-nav">About 4</a></li>
+                                <li class="item"><a href="#" class="item-nav">About 5</a></li> 
+                            </ul>
+                        </li>
+                        <li class="item" id="item-324"><a href="#" class="item-nav">Company</a>
+                            <ul class="child-menu">
+                                <li class="item"><a href="#" class="item-nav">Company 1</a></li>
+                                <li class="item"><a href="#" class="item-nav">Company 2</a></li>
+                                <li class="item"><a href="#" class="item-nav">Company 3</a></li>
+                                <li class="item"><a href="#" class="item-nav">Company 4</a></li>
+                                <li class="item"><a href="#" class="item-nav">Company 5</a></li> 
+                            </ul>
+                        </li>
+                        <li class="item"><a href="#" class="item-nav">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>

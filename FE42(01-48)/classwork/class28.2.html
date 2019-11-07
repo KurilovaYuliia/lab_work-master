@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElement</title>
+</head>
+<body>
+<table id="age-table">
+	<tr>
+		<td>Ваш возраст:</td>
+		<td>
+			<label><input type="text" name="child" /></label>
+			<label><input type="text" name="young" /></label>
+			<label><input type="text" name="mature" /></label>
+			<label><input type="text" name="adult" checked /></label>
+			<label><input type="text" name="senior" /></label>
+		</td>
+	</tr>
+</table>
+<button onClick="myFunction()">Очень нужно знать</button>
+<div id="answer"></div>
+
+</body>
+<script>
+	
+	function myFunction(){
+		 var tableElem = document.getElementsByTagName("input").length;
+		 document.getElementById("answer").innerHTML = tableElem;
+		} 	
+	
+</script>
+	
+	<!-- Вывести возраст 50 лет через alert или document и вывести сколько полученных длины елементов в форме
+создать форму с 5 возростами <lable><input type="text" name="young" checked></lable> -->
+</html>
+

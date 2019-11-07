@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lesson 11</title>
+</head>
+
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	.wrap {
+      padding: 50px;
+    }
+    .box {
+    	display: block; 
+    	position: relative;
+		width: 200px;
+		height: 150px;
+		float: left;
+		background: linear-gradient(to top right, #3a1c71 5%, #A963DB 36%, #D76D77 67%, #ffaf7b 98%);  
+		z-index: 1; 
+		cursor: pointer;     
+	}	
+	.box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to top left, #F78181 15%, #ff0000 32%, #F6F083 63% , #fff200 76%, #1e9600 89%);
+        z-index: -1;
+        transition: all 1s ease-in;
+        opacity: 0;
+    }
+    .box:hover:before {
+    	background: linear-gradient(to top left, #F78181 15%, #ff0000 32%, #F6F083 63% , #fff200 76%, #1e9600 89%);
+        z-index: -1;
+        transition: all 1s ease-in;
+        opacity: 1;
+    }	
+	/*--------------------------------------------*/   
+    .first-image {
+    	display: block;
+    	float: left;
+    	margin-left: 30px;
+    	width: auto;
+	    height: auto;
+	    transition: all 1s ease-in;
+	    cursor: pointer;
+	}   
+	.first-image:hover {
+    	width: 400px;
+	    height: 350px;
+	    transition: all 1s ease-in;
+	}
+	/*--------------------------------------------*/
+	.second-image{
+    	display: block;
+    	float: left;
+    	margin-left: 30px;
+    	width: auto;
+	    height: auto;
+	    cursor: pointer;
+	}   
+	.second-image:hover{
+    	border: 6px double blue; 
+	}
+	/*--------------------------------------------*/
+	.four {
+    	display: block;
+    	float: left;
+    	margin-left: 30px;
+    	width: auto;
+	    height: auto;
+	    cursor: pointer;
+	}
+	.third-image {
+		display: block; 
+    	position: relative;
+		width: 400px;
+		height: 300px;
+		opacity: 0.6;
+	}
+
+    .clear{
+	    clear:both;
+	}
+</style>
+
+<body>
+	<div class="wrap">
+
+	    <div class="box"></div>
+
+	    <div class="two"><img class="first-image" src="three.jpg" alt="bottle"></div>
+
+	    <div class="three"><img class="second-image" src="two.jpg" alt="crush"></div>
+	
+	    <div class="four"><img class="third-image" src="one.jpg" alt="drop">
+	    </div>
+	    
+
+	    <div class="clear"></div>
+    </div>
+
+</body>
+</html>
+
+<!-- 1) Блок ширина 200px высота 150px(сделать в обычном состоянии линейный градиент с 4 цветов в % соотношении, при наведении плавно меняется цвета градиента из 5 цветов)
+
+ 2)При наведении на картинку картинка увеличивается плавно (400px / 350px)
+
+3) При наведении на картинку появляется border 6px плавно
+
+4) Картинка ширина 400px, высота 300px затемнения полностью прозрачность черный(через before), при наведении снизу появляется блок на белом фоне на пол картинки заголовок в нем) -->
